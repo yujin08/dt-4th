@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+   <style>
+    h3:hover {
+        background-color: black;
+        color: white;
+    }
+
+    textarea:focus {
+        background-color: gainsboro;
+    }
+
+    button:active {
+        background-color: blue;
+        color: yellow;
+    }
+
+    input[id="red"]:checked + label{
+            background-color: red;
+    }
+
+    input[id="blue"]:checked + label{
+            background-color: blue;
+    }
+
+    input[id="yellow"]:checked + label{
+            background-color: yellow;
+    }
+
+ 
+   </style>
+</head>
+<body>
+    <h3>건의 사항을 적어주세요!</h3>
+    <textarea placeholder="건의 사항"></textarea>
+    <div>
+        <input type="checkbox" id="red"/>
+        <label for="red">빨강</label>
+        <input type="checkbox"  id="blue"/>
+        <label for="blue">파랑</label>
+        <input type="checkbox" id="yellow"/>
+        <label for="yellow">노랑</label>  
+    </div>
+    <button>제출</button>
+
+
+
+    
+      
+</body>
+</html>

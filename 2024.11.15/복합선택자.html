@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        /* li.class1 {
+            color: red;
+        }
+
+        span.class1 {
+            color: green;
+        }
+
+        ul > .cl1 {
+            color: red;
+        } */
+
+        /* div .cl1 {
+            color: red;
+        } */
+
+        .cl2 + div {
+            color: red;
+        }
+/* 
+        .cl2 ~ div {
+            color: red;
+        } */
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>사과</li>
+            <li class="cl1">딸기</li>
+            <li class="cl1">오렌지</li>
+            <div class="cl2">당근1</div>
+        </ul>
+        <div class="cl1">당근1</div>
+        <div class="cl2">당근2</div>
+        <div class="cl1">당근3</div>
+        <div class="cl1">당근4</div>
+        <span class="cl2">오렌지</span>
+    </div>
+</body>
+</html>

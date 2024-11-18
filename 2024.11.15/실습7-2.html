@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+     input {
+        display: none;
+     }
+
+     input + label {  /* 체크박스 만들기 */
+    width: 50px;
+    height: 50px;
+    border: 2px solid #000;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle;
+    border-radius: 10px;
+    user-select: none /* 드래그 금지 */
+}
+
+input:checked + label {  /* 체크되었을 때 */
+    background: yellow;
+}
+
+
+
+
+
+
+input[id="check2"]:checked + label:before {
+    content: "※";
+    width: 35px;
+    height: 35px;
+    position: relative;
+    top: 15%;
+    left: 15%;
+    background: yellow;
+    /* border-radius: 5px; */
+    align-items: center;
+}
+
+input[id="check3"]:checked + label:before {
+    content: "★";
+    width: 35px;
+    height: 35px;
+    position: relative;
+    top: 15%;
+    left: 15%;
+    background: skyblue;
+    border-radius: 5px;
+    align-items: center;
+}
+
+input[id="check4"]:checked + label:before {
+    content: "♥";
+    width: 35px;
+    height: 35px;
+    position: relative;
+    top: 15%;
+    left: 15%;
+    background: skyblue;
+    border-radius: 5px;
+    align-items: center;
+}
+        
+    </style>
+</head>
+<body>
+    <body>
+        <div class="container">
+          <input type="checkbox" id="check1">
+            <label for="check1"></label>
+          <input type="checkbox" id="check2">
+            <label for="check2"></label>
+          <input type="checkbox" id="check3">
+            <label for="check3"></label>
+          <input type="checkbox" id="check4">
+            <label for="check4"></label>
+        </div>
+      </body>
+</body>
+</html>

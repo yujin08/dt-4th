@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../folder1/test.css">
+    <style>
+      #naver:hover {
+        color: red;
+      }
+
+      #btn:active {
+        background-color: orange;
+      }
+
+      #txt:focus {
+        background-color: yellowgreen;
+      }
+
+      .fruits span:first-child {
+        color: purple;
+      }
+
+      .fruits span:first-child {
+        color: purple;
+      }
+
+      .fruits h3:last-child {
+        color: red;
+      }
+
+      .fruits *:nth-child(2n) {
+        color: yellowgreen;
+        font-weight: bold;
+        font-size: 30px;
+      }
+
+      .fruits *:not(span) {
+        background-color: skyblue;
+      }
+
+      .box::before {
+        content: "여러분";
+      }
+
+      .box::after {
+        content: " !!!";
+      }
+
+      [disabled] {
+        color: red;
+        background-color: yellow;
+      }
+
+      [type="password"] {
+        color: red;
+        background-color: yellow;
+      }
+
+      [type="radio"] {
+        color: red;
+        background-color: yellow;
+      }
+
+      [type="button"] {
+        color: red;
+        background-color: yellow;
+      }
+
+      #test_id {
+        background-color: red !important;
+      }
+
+      #test_id {
+        background-color: orange 
+      }
+    </style>
+</head>
+<body>
+    <h1>복합선택자 사용 연습</h1>
+    <p>동물원에 왔어요</p>
+    <div class="zoo">
+      <ul>
+        <span>여긴 사파리!</span>
+        <li>곰</li>
+        <li id="tiger">호랑이</li>
+        <li>팬더</li>
+        <li>팬더2</li>
+        <li>팬더3</li>
+        <span class="lion">사자1</span>
+        <li class="lion">사자2</li>
+        <li>사육사 allie</li>
+        <li>사육사 진형</li>
+      </ul>
+      <span class="lion"> 사파리 밖의 사자</span>
+    </div>
+    <p class="lion">야생의 사자</p>
+    <img src="../src/dog.jpeg" alt="강아지">
+
+    <a id="naver" href="https://naver.com">네이버</a>
+
+    <input id="btn" type="button" value="테스트 버튼"></input>
+
+    <input id="txt" type="text">
+
+    <div class="fruits">
+      <span>딸기</span>
+      <span>수박</span>
+      <div>오렌지</div>
+      <p>망고</p>
+      <h3>사과</h3>
+    </div>
+
+    <div class="box">
+      안녕하세요!
+    </div>
+
+    <input type="text" value="HEROPY">
+    <input type="password" value="1234">
+    <input type="text" value="ABCD" disabled>
+    <input type="radio">
+    <input type="button" value="버튼 테스트">
+
+    <div class="test_class">
+      <!-- <div style="background-color: blue;" id="test_id">테스트1</div> -->
+      <div  id="test_id">테스트1</div>
+    </div>
+  </body>
+</html>
