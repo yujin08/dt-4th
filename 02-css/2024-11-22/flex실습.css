@@ -1,0 +1,46 @@
+.container {
+    width: 500px;
+    height: 500px;
+    background-color:aquamarine;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+}
+
+.item1 {
+    background-color: red;
+}
+
+.item2 {
+    background-color: orange;
+}
+
+.item3 {
+    background-color: yellow;
+}
+
+.item4 {
+    background-color: green;
+}
+
+.item5 {
+    background-color: blue;
+}
+
+.item6 {
+    background-color: navy;
+}
+
+.item7 {
+    background-color: purple;
+}
+
+.item8 {
+    background-color: aqua;
+}
