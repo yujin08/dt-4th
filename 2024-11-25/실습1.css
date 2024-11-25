@@ -1,0 +1,15 @@
+body {
+    display: flex;
+    box-sizing: border-box;
+    padding: 100px;
+}
+
+div:hover {
+    transform: skewX(0deg);
+    transition: transform 1s;
+}
+
+div {
+    transform: skewY(30deg);
+    transition: transform 1s;
+}
