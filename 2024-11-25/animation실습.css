@@ -1,0 +1,31 @@
+.ball {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;   
+    position: fixed;
+    background-image: linear-gradient(to bottom, brown, orange, yellow);
+    
+    animation-name: ball;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes ball {
+    0% {
+        transform: translateX(0vw); 
+    }
+    25% {
+        transform: translate(calc(100vw - 100px), 0vh); 
+    }
+    50% {
+        transform: translate(calc(100vw - 100px), calc(100vh - 100px));
+    }
+    75% {
+        transform: translate(0vw, calc(100vh - 100px)); 
+    }
+    100% {
+        transform: translate(0vw, 0vh); 
+    }
+} 
+

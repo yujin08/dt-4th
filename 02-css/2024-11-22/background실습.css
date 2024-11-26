@@ -5,7 +5,7 @@
     background-color: red;
     background: linear-gradient(red, 50%, orange);
     position: relative;
-    margin: 100px;
+    /* margin: 100px; */
 }
 
 .img {
