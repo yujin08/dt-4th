@@ -197,16 +197,15 @@
 // Hint 3) 문자열과 문자열을 더한다
 // Hint 4) for문 중첩
 
-let result = '';
 let number = parseInt(prompt('숫자 입력'), 10);
 
 for (let i = 1; i <= number; i++) {
+  let result = '';
   for (let j = 1; j <= number - i; j++) {
     result += ' ';
   }
   for (let k = 1; k <= i; k++) {
     result += '*';
   }
-  result += '\n';
+  console.log(result);
 }
-console.log(result);
