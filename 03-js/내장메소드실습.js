@@ -35,13 +35,24 @@ let fruits1 = [
   '자두',
   '망고',
 ];
-let fruits2 = ['사과', '사과', '참외', '오렌지', '파인애플', '망고'];
+let fruits2 = ['수박', '사과', '참외', '오렌지', '파인애플', '망고'];
 
+/* 1. for 문 이용 */
 let same = [];
 let diff = [];
-
 for (let i = 0; i < fruits1.length; i++) {
-  fruits1[i] === fruits2[i] ? same.push(fruits1[i]) : diff.push(fruits1[i]);
+  if (fruits2.includes(fruits1[i])) {
+    same.push(fruits1[i]);
+  } else {
+    diff.push(fruits1[i]);
+  }
 }
 console.log(same);
 console.log(diff);
+
+/* 2. filter 와 includes 이용 */
+let same2 = fruits1.filter((fr) => fruits2.includes(fr));
+let diff2 = fruits1.filter((fr) => !fruits2.includes(fr));
+
+console.log(same2);
+console.log(diff2);
