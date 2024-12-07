@@ -73,6 +73,9 @@ function changeBtnColor() {
 
 // * this 키워드
 // - 이벤트가 발생한 DOM 요소를 가르킴.
+// - 화살표 함수에서는 동작 방식이 다르게 작용될 수 있습니다.
+// 일반 함수: 'this'는 이벤트를 발생시킨 DOM 요소를 가르킴.
+// 화살표 함수: 'this'는 상위 스코프를 따름. (window, undefined)
 
 // key Event
 // 이벤트 객체 (e)
