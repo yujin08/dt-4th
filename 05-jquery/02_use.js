@@ -1,8 +1,8 @@
 // val() - value
 function getValue() {
   // js
-  //   const inputVal = document.querySelector('input').value;
-  //   alert(inputVal);
+  // const inputVal = document.querySelector('input').value;
+  // alert(inputVal);
 
   // jQuery
   const value = $('input').val();
