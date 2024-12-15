@@ -38,8 +38,8 @@ class Rectangle extends Shape {
     super(w, h);
   }
 
-  getSqrt() {
-    return Math.sqrt(this.w ** 2);
+  getDiagonal() {
+    return Math.sqrt(this.w ** 2 + this.h ** 2);
   }
 }
 
@@ -68,6 +68,6 @@ let tri = new Triangle(5, 5);
 let cir = new Circle(5, 5, 5);
 
 // console.log(rec2, tri, cir);
-console.log(rec2.getSqrt());
+console.log(rec2.getDiagonal());
 console.log(tri.getArea());
 console.log(cir.getArea());
