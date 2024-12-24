@@ -36,6 +36,7 @@
 // - fetch()는 URL을 인자로 받아 데이터를 가져온다
 // - fetch()에서 GET 요청은 기본 동작이기 때문에 명시적으로 설정하지 않아도 됨
 // Action) JSONPlaceHolder 사이트에서 게시글 데이터 가져오기
+
 fetch('https://jsonplaceholder.typicode.com/posts')
   .then((response) => {
     // * response: 서버에서 반환된 응답 객체
