@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+h2 {
+  color: orange;
+}
+
+.BookContainer {
+  background-color: antiquewhite;
+  width: 50%;
+  padding: 20px;
+  text-align: left;
+}
+
+.BookImage {
+  width: 120px;
+  padding-left: 50px;
+}
