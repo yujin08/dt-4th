@@ -36,21 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-.title {
-  background-color: orange;
-  width: 20%;
-  text-align: center;
-}
-
-.inputWrapper {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  gap: 10px;
-}
-
-.input {
-  display: flex;
-  gap: 10px;
-}
