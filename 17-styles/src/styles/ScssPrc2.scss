@@ -1,0 +1,23 @@
+@mixin circle($background-color) {
+  background-color: $background-color;
+}
+
+.container {
+  .box {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+  }
+  .pink {
+    @include circle(pink);
+    transform: translateX(10px);
+  }
+  .yellow {
+    @include circle(yellow);
+    transform: translateX(20);
+  }
+  .green {
+    @include circle(green);
+    transform: translateX(30);
+  }
+}
