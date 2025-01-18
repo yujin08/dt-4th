@@ -3,6 +3,7 @@ import MainPage from './pages/MainPage';
 import ProductPage from './pages/ProductPage';
 import Header from './components/Header';
 import ProductDetailPage from './pages/ProductDetailPage';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
@@ -18,6 +19,10 @@ function App() {
             path="/products/:productId"
             element={<ProductDetailPage />}
           ></Route>
+          <Route path="*" element={<NotFound />} />
+          {/* React router는 위에서 아래로 경로를 매칭 */}
+          {/* 와일드카드 경로가 위에 배치시 모든 경로를 덮어 씌움 */}
+          {/* 그러므로, 와일드카드 경로는 항상 마지막에 배치 */}
         </Routes>
       </BrowserRouter>
     </>

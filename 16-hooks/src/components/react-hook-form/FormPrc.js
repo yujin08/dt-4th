@@ -28,7 +28,7 @@ export default function FormPrc() {
             required: '이름은 필수 항목입니다.',
           })}
         />
-        {errors.username?.message}
+        {errors.name?.message}
         <br />
         <label htmlFor="age">나이</label>
         <input
@@ -42,6 +42,7 @@ export default function FormPrc() {
             },
           })}
         />
+        {errors.age?.message}
         <button type="submit">제출</button>
       </form>
     </div>
