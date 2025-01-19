@@ -11,7 +11,7 @@ export default function UseToolkit() {
     <div>
       <h1>UseToolkit</h1>
       <h2>리듀서 추가!</h2>
-      <h2>number: {count}</h2>
+      <h2>number:{count}</h2>
       <Box1 />
     </div>
   );
