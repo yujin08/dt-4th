@@ -96,13 +96,21 @@ console.log(Cake);
  *
  * 'TS'의 'enum'은 JS로 컴파일 될 때, 양방향 매핑 지원을 위해 변환
  * 이 변환 과정에서 'enum' 값과 키가 모두 포함된 객체가 생성되며, 로그에 양방향 매핑이 포함된 형태로 출력
+ *
+ * ##2. 'enum'은 한번 생성되면, 속성 추가 및 수정 불가
+ *
+ * ##3. 'enum'은 속성 값으로 숫자, 문자열만 할당 가능
  */
-// ex2)
-var Food;
-(function (Food) {
-    Food[Food["pizza"] = 4000] = "pizza";
-    Food[Food["pasta"] = 5000] = "pasta";
-    Food[Food["burger"] = 2000] = "burger";
-})(Food || (Food = {}));
-console.log(Food.pasta);
-console.log(Food[5000]);
+// ex)
+// enum Food {
+//   pizza = 4000,
+//   pasta = 5000,
+//   burger = 2000,
+// }
+// console.log(Food.pasta); // 5000 ('키'를 통해서 값을 찾음)
+// console.log(Food[5000]); // pasta ('값'을 통해서 키를 찾음)
+// #################################
+// ** Any **
+// 1. 명시적 타입 지정
+let val = true;
+console.log(val, typeof val);
